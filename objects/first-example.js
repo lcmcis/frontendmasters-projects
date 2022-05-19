@@ -1,3 +1,5 @@
+// Objects are unordered collection of data using keys and values
+
 const person = {
     name: "John Doe",
     city: "Charleston",
