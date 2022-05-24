@@ -12,6 +12,9 @@ console.log("-------------------------------------")
 
 function findLargestNumber(list) {
     // return the largest number in array
+   if(list.length === 0) {
+       return undefined
+   }
    let largest = list[0]
    for(let i = 1; i < list.length; i++) {
        if(list[i] > largest) {
@@ -551,12 +554,21 @@ function makeDogObject() {
     // list is an array of objects that looks like this
     // { name: "Some Person", jobTitle: "Boss Person", age: 30 }
     // return a list of all the workers' names
+   
+    // Method 1
     const names = []
     for(let i = 0; i < list.length; i++) {
         names.push(list[i].name)
     }
-
     return names
+
+    // Method 2
+    /*
+    const names = list.map(function(person) {
+        return name.person
+    })
+    return names
+    */ 
   }
 
 
